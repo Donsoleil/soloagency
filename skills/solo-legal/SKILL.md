@@ -70,4 +70,4 @@ yet with a reason, plus a named point where a lawyer is required. Unfilled
 placeholder text in a published policy is a fail, not a detail.
 
 ---
-Studio140 · soloagency v0.1 · see references/CONTRACT.md
+140.studio · soloagency v0.1 · see references/CONTRACT.md

@@ -2,7 +2,7 @@
 
 Skills for people running the whole company themselves.
 
-By [Studio140](https://github.com/donsoleil). MIT licensed.
+By [140.studio](https://www.140.studio). MIT licensed.
 
 **v0.2 — Orchestration.** Seventeen skills. A front desk that takes a fuzzy ask
 and routes it, a brief step that sharpens it first, an evidence gate that
@@ -87,6 +87,4 @@ least one anti-trigger in its description, or it will not be merged.
 
 ## Credits
 
-Written by Studio140. The scope of the business lane was informed by
-[solo-founder-skills](https://github.com/whawkinsiv/solo-founder-skills) by
-Will Hawkins, MIT licensed. See [NOTICE.md](NOTICE.md).
+Written by [140.studio](https://www.140.studio).

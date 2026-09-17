@@ -65,4 +65,4 @@ to-live number, and a teardown table with at least three named competitors and
 real quoted complaints. Uncited inputs are `NOT VERIFIED`.
 
 ---
-Studio140 · soloagency v0.1 · see references/CONTRACT.md
+140.studio · soloagency v0.1 · see references/CONTRACT.md

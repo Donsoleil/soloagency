@@ -71,4 +71,4 @@ claimed control, the artifact that proves it. A claimed certification without
 a report is a fail.
 
 ---
-Studio140 · soloagency v0.1 · see references/CONTRACT.md
+140.studio · soloagency v0.1 · see references/CONTRACT.md

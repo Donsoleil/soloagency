@@ -66,4 +66,4 @@ three-way score, the loop described in one sentence or explicitly named absent,
 the activation rate, and one named activity stopped.
 
 ---
-Studio140 · soloagency v0.1 · see references/CONTRACT.md
+140.studio · soloagency v0.1 · see references/CONTRACT.md

@@ -1,5 +1,15 @@
 # Changelog
 
+## v0.2.1
+
+Fixed a destructive bug in the installer. Running it from inside
+`~/.agents/sources/soloagency` made the source and the canonical destination
+the same path, so the script deleted the tree it was about to copy from and
+left every linked root pointing at an empty directory. The installer now
+detects that case, skips staging, and relinks against what is already there.
+
+Authorship consolidated under 140.studio.
+
 ## v0.2.0 — Orchestration and prompt routing
 
 Four skills that sit above the business lane.

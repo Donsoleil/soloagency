@@ -70,4 +70,4 @@ recovery numbers from the connector. Prose descriptions of the flow are
 `NOT VERIFIED`.
 
 ---
-Studio140 · soloagency v0.1 · see references/CONTRACT.md
+140.studio · soloagency v0.1 · see references/CONTRACT.md

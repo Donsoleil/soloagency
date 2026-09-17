@@ -63,4 +63,4 @@ pointer to where that phrase came from, and one read-aloud test with what the
 person said back. A page nobody outside the build has read is `NOT VERIFIED`.
 
 ---
-Studio140 · soloagency v0.1 · see references/CONTRACT.md
+140.studio · soloagency v0.1 · see references/CONTRACT.md

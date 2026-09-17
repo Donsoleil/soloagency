@@ -54,20 +54,34 @@ if [[ ! -d "$SRC/skills" ]]; then
   exit 1
 fi
 
+# Refuse to destroy the source. Running this from inside the canonical
+# directory used to delete the tree it was about to copy from.
+SRC_ABS="$(cd "$SRC" && pwd -P)"
+CANON_ABS="$CANON"
+[[ -d "$CANON" ]] && CANON_ABS="$(cd "$CANON" && pwd -P)"
+if [[ "$SRC_ABS" == "$CANON_ABS" || "$SRC_ABS" == "$CANON_ABS"/* ]]; then
+  echo "The source is the canonical directory itself ($SRC_ABS)."
+  echo "Nothing to copy. Relinking the roots against what is already there."
+  SKIP_STAGE=1
+fi
+
 echo "source: $SRC"
 echo "canonical: $CANON"
+if [[ "${SKIP_STAGE:-0}" -eq 0 ]]; then
 run mkdir -p "$(dirname "$CANON")"
 run rm -rf "$CANON"
 if [[ $DRY -eq 1 ]]; then echo "  would: copy $SRC to $CANON (excluding .git)"; else
   mkdir -p "$CANON"
   (cd "$SRC" && tar --exclude=.git --exclude=.github -cf - .) | (cd "$CANON" && tar -xf -)
 fi
+fi
 
 # glob over the real source so --dry-run reports truthfully,
 # but link to the canonical path that will exist after a real run
 SRC_SKILLS="$SRC/skills"
+[[ "${SKIP_STAGE:-0}" -eq 1 ]] && SRC_SKILLS="$CANON/skills"
 CANON_SKILLS="$CANON/skills"
-COUNT=$(ls -1 "$SRC/skills" | wc -l | tr -d ' ')
+COUNT=$(ls -1 "$SRC_SKILLS" | wc -l | tr -d ' ')
 echo "skills found: $COUNT"
 echo
 

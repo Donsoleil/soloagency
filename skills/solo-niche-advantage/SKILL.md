@@ -58,4 +58,4 @@ picked and why, and the positioning line. Unnamed channels ("my network") are
 `NOT VERIFIED`.
 
 ---
-Studio140 · soloagency v0.1 · see references/CONTRACT.md
+140.studio · soloagency v0.1 · see references/CONTRACT.md

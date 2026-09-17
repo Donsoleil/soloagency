@@ -68,4 +68,4 @@ and the resulting call with its reason. Threshold written afterwards means
 `NOT VERIFIED`.
 
 ---
-Studio140 · soloagency v0.1 · see references/CONTRACT.md
+140.studio · soloagency v0.1 · see references/CONTRACT.md
