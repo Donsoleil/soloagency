@@ -66,4 +66,4 @@ three-way score, the loop described in one sentence or explicitly named absent,
 the activation rate, and one named activity stopped.
 
 ---
-140.studio · see references/CONTRACT.md
+Studio140 · see references/CONTRACT.md

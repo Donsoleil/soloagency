@@ -1,14 +1,14 @@
 {
   "name": "soloagency-marketplace",
-  "description": "soloagency by 140.studio: skills for people running the whole company themselves",
-  "owner": { "name": "140.studio", "url": "https://www.140.studio" },
+  "description": "soloagency by Studio140: skills for people running the whole company themselves",
+  "owner": { "name": "Studio140", "url": "https://www.140.studio/" },
   "plugins": [
     {
       "name": "soloagency",
       "description": "v0.2. 17 skills: the business lane plus the front desk, brief sharpening, the evidence gate, and founder context.",
-      "version": "0.2.2",
+      "version": "0.2.3",
       "source": "./",
-      "author": { "name": "140.studio", "url": "https://www.140.studio" }
+      "author": { "name": "Studio140", "url": "https://www.140.studio/" }
     }
   ]
 }

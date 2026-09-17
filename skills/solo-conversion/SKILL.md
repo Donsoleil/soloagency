@@ -78,4 +78,4 @@ the change shipped, and the same table after. A change with no before-number is
 `NOT VERIFIED`.
 
 ---
-140.studio · see references/CONTRACT.md
+Studio140 · see references/CONTRACT.md

@@ -29,15 +29,24 @@ for d in skills/*/; do
   # the contract
   grep -qi "Do NOT use" "$f" || note "no anti-trigger (needs a 'Do NOT use' clause)"
   grep -q "^## Evidence" "$f"  || note "no ## Evidence section"
-  grep -q "140.studio" "$f"    || note "no 140.studio credit line"
+  grep -q "Studio140" "$f"     || note "no Studio140 credit line"
 
   # house style
   grep -q "—" "$f" && note "contains an em dash"
 done
 
+# repo docs follow the same house style
+echo "repo docs"
+for f in README.md ROADMAP.md CHANGELOG.md references/CONTRACT.md; do
+  [[ -f "$f" ]] || continue
+  grep -q "—" "$f" && note "$f contains an em dash"
+done
+grep -q "Studio140" README.md || note "README.md has no Studio140 credit"
+grep -q "Studio140" LICENSE   || note "LICENSE has no Studio140 copyright"
+
 echo
 if [[ $fail -eq 0 ]]; then
-  echo "PASS: $(ls -d skills/*/ | wc -l | tr -d ' ') skills meet the contract"
+  echo "PASS: $(ls -d skills/*/ | wc -l | tr -d ' ') skills and the repo docs meet the contract"
 else
   echo "FAILED. See above."
 fi

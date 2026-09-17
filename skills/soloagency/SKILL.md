@@ -83,4 +83,4 @@ exit condition marked met or `NOT VERIFIED` with what is missing. A handoff
 with no exit condition is not a handoff, it is a hope.
 
 ---
-140.studio · see references/CONTRACT.md
+Studio140 · see references/CONTRACT.md

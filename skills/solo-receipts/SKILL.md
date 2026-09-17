@@ -70,4 +70,4 @@ A review where everything lands in Verified with no artifacts named has not run
 this skill, whatever it says at the top.
 
 ---
-140.studio · see references/CONTRACT.md
+Studio140 · see references/CONTRACT.md

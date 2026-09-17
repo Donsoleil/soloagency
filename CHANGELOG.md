@@ -1,5 +1,15 @@
 # Changelog
 
+## v0.2.3
+
+Authorship reads Studio140 everywhere, linking to https://www.140.studio/:
+skill footers, LICENSE, both manifests, and the README credit.
+
+The gate now checks the repo docs too, not just `skills/`. README, ROADMAP,
+CHANGELOG and the contract are checked for house style, and README and LICENSE
+are checked for the credit. Em dashes that had accumulated in those four files
+are gone.
+
 ## v0.2.2
 
 The contract is now enforced instead of promised. `scripts/gate.sh` checks
@@ -19,9 +29,9 @@ the same path, so the script deleted the tree it was about to copy from and
 left every linked root pointing at an empty directory. The installer now
 detects that case, skips staging, and relinks against what is already there.
 
-Authorship consolidated under 140.studio.
+Authorship consolidated under Studio140.
 
-## v0.2.0 — Orchestration and prompt routing
+## v0.2.0: Orchestration and prompt routing
 
 Four skills that sit above the business lane.
 
@@ -43,7 +53,7 @@ Fixed: the installer no longer copies `.git` into the canonical source
 directory, which made the canonical copy a detached snapshot instead of
 something a `git pull` could update.
 
-## v0.1.0 — Business
+## v0.1.0: Business
 
 Thirteen skills across four lanes: Validate, Money, Launch and grow, Floor.
 Contract established in `references/CONTRACT.md`: evidence not assertion, read

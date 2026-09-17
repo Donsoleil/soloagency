@@ -78,4 +78,4 @@ cost-of-alternative number that anchors it, and either a connector-pulled
 current state or an explicit note that current pricing is founder-reported.
 
 ---
-140.studio · see references/CONTRACT.md
+Studio140 · see references/CONTRACT.md

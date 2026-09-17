@@ -64,4 +64,4 @@ count of how many independent people raised it. Fewer than five conversations
 means `NOT VERIFIED`, and say how many you actually did.
 
 ---
-140.studio · see references/CONTRACT.md
+Studio140 · see references/CONTRACT.md
