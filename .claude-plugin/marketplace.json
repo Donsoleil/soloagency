@@ -5,8 +5,8 @@
   "plugins": [
     {
       "name": "soloagency",
-      "description": "v0.1 Business. 13 skills covering validation, pricing, payments, conversion, launch, growth, community, and the legal floor.",
-      "version": "0.1.0",
+      "description": "v0.2. 17 skills: the business lane plus the front desk, brief sharpening, the evidence gate, and founder context.",
+      "version": "0.2.0",
       "source": "./",
       "author": { "name": "Studio140" }
     }

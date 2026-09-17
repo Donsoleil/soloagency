@@ -4,13 +4,15 @@ Skills for people running the whole company themselves.
 
 By [Studio140](https://github.com/donsoleil). MIT licensed.
 
-**v0.1 — Business.** Thirteen skills covering the decisions that come before
-code: who you are building for, whether they will pay, what to charge, how to
-take the money, how to get the first customers, and the legal floor under all
-of it.
+**v0.2 — Orchestration.** Seventeen skills. A front desk that takes a fuzzy ask
+and routes it, a brief step that sharpens it first, an evidence gate that
+catches work that did not happen, and the thirteen business skills underneath:
+who you are building for, whether they will pay, what to charge, how to take
+the money, how to get the first customers, and the legal floor under all of it.
 
-Orchestration, teams, and the research and design lanes ship in later
-versions. See [ROADMAP.md](ROADMAP.md).
+Start with `soloagency` if you are not sure which skill you need.
+
+Teams and loops, then the research and design lanes, ship in later versions. See [ROADMAP.md](ROADMAP.md) and [CHANGELOG.md](CHANGELOG.md).
 
 ## What makes these different
 
@@ -32,6 +34,10 @@ skill body:
 
 | Lane | Skill | For |
 |---|---|---|
+| Desk | `soloagency` | Fuzzy ask in, lane and crew out |
+| | `solo-brief` | Sharpen the ask before anyone acts on it |
+| | `solo-receipts` | Verified, Reported, Not verified, kept apart |
+| | `solo-about` | Founder context, written once, read by everything |
 | Validate | `solo-customer-research` | Who this is actually for, in their words |
 | | `solo-market-research` | Bottom-up sizing, competitor teardown |
 | | `solo-validate` | Will anyone pay, tested before you build |
@@ -53,7 +59,7 @@ Nothing here is legal, tax, or financial advice.
 ### Claude Code plugin marketplace
 
 ```
-/plugin marketplace add donsoleil/soloagency
+/plugin marketplace add Donsoleil/soloagency
 /plugin install soloagency
 ```
 
@@ -65,7 +71,7 @@ machine: Claude Code, Codex, OpenCode, Cursor, Goose, Berd, and a shared
 `~/.agents/sources/soloagency`, so an update refreshes every tool at once.
 
 ```
-git clone https://github.com/donsoleil/soloagency.git
+git clone https://github.com/Donsoleil/soloagency.git
 cd soloagency
 ./install-soloagency.sh . --dry-run
 ./install-soloagency.sh .

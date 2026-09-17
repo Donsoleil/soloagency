@@ -2,7 +2,7 @@
 
 Shipped in slices so each release is usable on its own.
 
-## v0.1 — Business (this release)
+## v0.1 — Business (shipped)
 Decide what to sell, to whom, for how much, how to get paid, and how to stay
 legal. 13 skills, no orchestration. You invoke them by name.
 
@@ -12,7 +12,7 @@ Lanes and their skills:
 - **Launch and grow** — solo-landing-page, solo-launch, solo-growth, solo-community
 - **Floor** — solo-legal, solo-compliance
 
-## v0.2 — Orchestration and prompt routing
+## v0.2 — Orchestration and prompt routing (this release)
 - `soloagency` front desk: classify the ask, bind a lane, set the loop budget and exit condition
 - `solo-brief`: turns a rough ask into a prompt an agent can actually run, against a founder rubric
 - `solo-receipts`: the evidence gate, cut to what one person can produce

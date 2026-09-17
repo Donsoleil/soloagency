@@ -58,7 +58,10 @@ echo "source: $SRC"
 echo "canonical: $CANON"
 run mkdir -p "$(dirname "$CANON")"
 run rm -rf "$CANON"
-run cp -R "$SRC" "$CANON"
+if [[ $DRY -eq 1 ]]; then echo "  would: copy $SRC to $CANON (excluding .git)"; else
+  mkdir -p "$CANON"
+  (cd "$SRC" && tar --exclude=.git --exclude=.github -cf - .) | (cd "$CANON" && tar -xf -)
+fi
 
 # glob over the real source so --dry-run reports truthfully,
 # but link to the canonical path that will exist after a real run
