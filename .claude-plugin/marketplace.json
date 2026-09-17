@@ -1,0 +1,14 @@
+{
+  "name": "soloagency-marketplace",
+  "description": "soloagency by Studio140 — skills for people running the whole company themselves",
+  "owner": { "name": "Studio140" },
+  "plugins": [
+    {
+      "name": "soloagency",
+      "description": "v0.1 Business. 13 skills covering validation, pricing, payments, conversion, launch, growth, community, and the legal floor.",
+      "version": "0.1.0",
+      "source": "./",
+      "author": { "name": "Studio140" }
+    }
+  ]
+}

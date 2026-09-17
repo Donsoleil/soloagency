@@ -1,0 +1,9 @@
+{
+  "name": "soloagency",
+  "version": "0.1.0",
+  "description": "The business lane for solo founders: decide what to sell, to whom, for how much, how to get paid, and how to stay legal. Every skill states the evidence that proves it ran.",
+  "author": { "name": "Studio140" },
+  "repository": "https://github.com/donsoleil/soloagency",
+  "license": "MIT",
+  "keywords": ["solo-founder","business","pricing","validation","gtm","launch","growth","saas"]
+}
