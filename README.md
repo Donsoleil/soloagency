@@ -83,7 +83,13 @@ skipped. Restart each agent afterwards, since they index skills at launch.
 ## Contributing
 
 Issues and PRs welcome. A new skill has to carry an Evidence section and at
-least one anti-trigger in its description, or it will not be merged.
+least one anti-trigger in its description, or it will not be merged. That is
+not a manual review step: `scripts/gate.sh` enforces it and runs in CI on
+every pull request. Run it yourself before opening one.
+
+```
+./scripts/gate.sh
+```
 
 ## Credits
 

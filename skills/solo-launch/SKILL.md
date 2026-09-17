@@ -65,4 +65,4 @@ list of stated reasons from people who did not buy. A launch report with
 traffic but no paid number is `NOT VERIFIED`.
 
 ---
-140.studio · soloagency v0.1 · see references/CONTRACT.md
+140.studio · see references/CONTRACT.md

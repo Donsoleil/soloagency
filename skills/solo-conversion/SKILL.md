@@ -78,4 +78,4 @@ the change shipped, and the same table after. A change with no before-number is
 `NOT VERIFIED`.
 
 ---
-140.studio · soloagency v0.1 · see references/CONTRACT.md
+140.studio · see references/CONTRACT.md

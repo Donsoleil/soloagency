@@ -1,5 +1,16 @@
 # Changelog
 
+## v0.2.2
+
+The contract is now enforced instead of promised. `scripts/gate.sh` checks
+every skill for a frontmatter name matching its directory, a description long
+enough to route on, an anti-trigger clause, an Evidence section, the credit
+line, and house style. It runs in CI on every push and pull request, so a
+contribution that skips the Evidence section fails before review.
+
+Per-skill version footers removed. `plugin.json` is the single source of the
+pack version, so footers no longer drift each release.
+
 ## v0.2.1
 
 Fixed a destructive bug in the installer. Running it from inside

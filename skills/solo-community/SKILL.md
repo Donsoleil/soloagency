@@ -62,4 +62,4 @@ by someone other than you, and the support-ticket trend. "It feels active" is
 `NOT VERIFIED`.
 
 ---
-140.studio · soloagency v0.1 · see references/CONTRACT.md
+140.studio · see references/CONTRACT.md

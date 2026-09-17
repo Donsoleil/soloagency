@@ -59,4 +59,4 @@ The output block above, with `Missing` populated honestly. A brief where
 `Missing` says nothing, on an ask that arrived vague, is `NOT VERIFIED`.
 
 ---
-140.studio · soloagency v0.2 · see references/CONTRACT.md
+140.studio · see references/CONTRACT.md
