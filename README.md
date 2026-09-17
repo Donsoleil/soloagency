@@ -2,7 +2,7 @@
 
 Skills for people running the whole company themselves.
 
-By [140.studio](https://www.140.studio). MIT licensed.
+By [Studio140](https://www.140.studio). MIT licensed.
 
 **v0.2 — Orchestration.** Seventeen skills. A front desk that takes a fuzzy ask
 and routes it, a brief step that sharpens it first, an evidence gate that
