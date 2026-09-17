@@ -5,8 +5,8 @@
   "plugins": [
     {
       "name": "soloagency",
-      "description": "v0.2. 17 skills: the business lane plus the front desk, brief sharpening, the evidence gate, and founder context.",
-      "version": "0.2.3",
+      "description": "v0.3. 20 skills: the business lane, the front desk and evidence gate above it, and crews, graphs and standing loops for running work that spans several skills.",
+      "version": "0.3.0",
       "source": "./",
       "author": { "name": "Studio140", "url": "https://www.140.studio/" }
     }

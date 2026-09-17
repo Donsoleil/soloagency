@@ -18,7 +18,7 @@ Lanes and their skills:
 - `solo-receipts`: the evidence gate, cut to what one person can produce
 - `solo-about`: founder context file so the other skills stop asking the same questions
 
-## v0.3: Teams, graph, loops
+## v0.3: Teams, graph, loops (this release)
 - Ordered crews per lane rather than one skill at a time
 - Graph run with a merge step and an independent checker
 - Standing loops: weekly money check, monthly trajectory check

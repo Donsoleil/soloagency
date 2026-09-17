@@ -1,5 +1,25 @@
 # Changelog
 
+## v0.3.0: Teams, graph, loops
+
+Three skills for work that spans more than one skill.
+
+- **`solo-crew`** runs a lane as an ordered team, carrying a handoff packet
+  between members so the founder explains their business once rather than once
+  per skill. A fact enters the packet only with an artifact behind it, and the
+  crew stops when a member a downstream member depends on returns
+  `NOT VERIFIED`.
+- **`solo-graph`** runs genuinely independent branches in parallel and merges
+  them, with an independence test that refuses fake parallelism, attribution on
+  every merged fact, and an independent `solo-receipts` check on the merge.
+  Capped at two or three branches, because one person cannot supervise more.
+- **`solo-loop`** sets up standing checks: weekly money, monthly trajectory,
+  quarterly stop-doing. Every loop needs a threshold and an action attached to
+  it, or it is a chore that gets dropped.
+
+The front desk now hands multi-skill crews to `solo-crew` rather than running
+them itself.
+
 ## v0.2.3
 
 Authorship reads Studio140 everywhere, linking to https://www.140.studio/:

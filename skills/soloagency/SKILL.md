@@ -55,6 +55,13 @@ mechanical, meaning failed charges, revenue not matching customer count, or tax.
 customer is waiting on a contract, a questionnaire, or a regulated data question,
 because it blocks revenue.
 
+## Handing the crew off
+
+A crew of one skill: call it directly. Two or more in sequence: hand the crew to
+`solo-crew`, which carries context between members so the founder is not asked
+the same thing twice. Genuinely independent branches that merge: `solo-graph`.
+Work that should recur on a cadence rather than happen once: `solo-loop`.
+
 ## Routing the ask apart
 
 Most fuzzy asks contain two or three real asks wearing one sentence. Split them,

@@ -4,15 +4,17 @@ Skills for people running the whole company themselves.
 
 By [Studio140](https://www.140.studio/). MIT licensed.
 
-**v0.2, Orchestration.** Seventeen skills. A front desk that takes a fuzzy ask
+**v0.3, Teams and loops.** Twenty skills. A front desk that takes a fuzzy ask
 and routes it, a brief step that sharpens it first, an evidence gate that
-catches work that did not happen, and the thirteen business skills underneath:
+catches work that did not happen, crews and graphs for work spanning several
+skills, standing loops that notice problems without being asked, and the
+thirteen business skills underneath:
 who you are building for, whether they will pay, what to charge, how to take
 the money, how to get the first customers, and the legal floor under all of it.
 
 Start with `soloagency` if you are not sure which skill you need.
 
-Teams and loops, then the research and design lanes, ship in later versions. See [ROADMAP.md](ROADMAP.md) and [CHANGELOG.md](CHANGELOG.md).
+The research, UX, design and product lanes ship in v0.4. See [ROADMAP.md](ROADMAP.md) and [CHANGELOG.md](CHANGELOG.md).
 
 ## What makes these different
 
@@ -35,6 +37,9 @@ skill body:
 | Lane | Skill | For |
 |---|---|---|
 | Desk | `soloagency` | Fuzzy ask in, lane and crew out |
+| | `solo-crew` | Run a lane as a team, context carried between members |
+| | `solo-graph` | Parallel branches, merged, independently checked |
+| | `solo-loop` | Standing checks with thresholds that mean act |
 | | `solo-brief` | Sharpen the ask before anyone acts on it |
 | | `solo-receipts` | Verified, Reported, Not verified, kept apart |
 | | `solo-about` | Founder context, written once, read by everything |
