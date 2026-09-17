@@ -145,6 +145,15 @@ for root in "${ROOTS[@]}"; do
   echo "$root: $installed installed, $skipped skipped"
 done
 
+# Warn about the one real footgun: the same skills installed twice for Claude Code
+if [[ -d "$HOME/.claude/plugins" ]] && grep -rqs "soloagency" "$HOME/.claude/plugins" 2>/dev/null; then
+  echo
+  echo "Note: soloagency also looks installed as a Claude Code plugin."
+  echo "That gives Claude Code two copies of every skill. Keep the plugin and"
+  echo "drop the links for that one tool:"
+  echo "  find ~/.claude/skills -maxdepth 1 -type l -lname '*sources/soloagency*' -delete"
+fi
+
 echo
 echo "done. To update later: re-run with the new zip, links pick it up automatically."
 echo "To uninstall: find the roots above and remove links pointing into $CANON"

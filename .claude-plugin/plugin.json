@@ -1,6 +1,6 @@
 {
   "name": "soloagency",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Skills for people running the whole company themselves. A front desk that routes, a brief step that sharpens the ask, an evidence gate that catches invented work, and the business lane underneath. Every skill states the evidence that proves it ran.",
   "author": { "name": "Studio140", "url": "https://www.140.studio/" },
   "repository": "https://github.com/donsoleil/soloagency",

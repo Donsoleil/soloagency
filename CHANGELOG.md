@@ -1,5 +1,17 @@
 # Changelog
 
+## v0.3.1
+
+Install instructions rewritten around the two paths that are actually verified:
+the plugin marketplace for Claude Code, and the multi-root installer for tools
+without a plugin system. Adds a quick start at the top, the full table of skill
+roots the installer looks for, how to update each way, how to recover if you
+installed both, and how to uninstall cleanly.
+
+The installer now warns when soloagency also appears to be installed as a
+Claude Code plugin, since that leaves two copies of every skill competing to
+answer.
+
 ## v0.3.0: Teams, graph, loops
 
 Three skills for work that spans more than one skill.
