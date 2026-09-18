@@ -41,18 +41,21 @@ import sys,re
 p,count=sys.argv[1],sys.argv[2]
 s=open(p).read()
 note=f"""
-## You are running as a bundle
+## Read the lane before you route to it
 
 This upload carries the whole pack. The other {count} skills are files in
 `lanes/`, named after the skill: `lanes/solo-pricing.md`,
-`lanes/solo-validate.md`, and so on. The shared rules are in
-`references/CONTRACT.md`, the notebook in `references/MEMORY.md`.
+`lanes/solo-validate.md`. Shared rules in `references/CONTRACT.md`, the
+notebook in `references/MEMORY.md`. List `lanes/` rather than guessing a name.
 
-When you bind a crew, read the matching file in `lanes/` and follow it as
-written. It is the same skill, delivered as a file rather than installed
-separately. Read only the ones the lane actually needs.
+**A lane you have not opened is a name, not a skill.** You can produce a
+confident routing answer from the table below without reading anything, and it
+will look exactly like real routing. It is not. Open the file for every lane
+you are going to use, and read only those.
 
-The full list is in `lanes/`. Check it rather than guessing at a name.
+When you report, list the files you actually opened. If you named a lane and
+did not open it, say so in the same breath. That one sentence is the difference
+between this working and this being an impression of itself.
 
 """
 s=s.replace("## First move, always", note+"## First move, always",1)

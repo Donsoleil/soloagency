@@ -1,5 +1,64 @@
 # Changelog
 
+## v0.7.0: The gap the desk could not see
+
+A second real run routed confidently into a lane that could not hold the
+question. The ask was whether holding other people's money makes you a
+regulated business. The desk sent it to `solo-compliance`, which covers data
+privacy regimes and nothing else, and `solo-legal`, which covers entity and
+contracts. Money transmission had no owner anywhere in the pack, and the Floor
+lane read like it covered regulated work in general.
+
+Three fixes.
+
+**`solo-money-rules`.** A lane for products that hold, pool, move, or pay out
+money belonging to other people. It turns on one question, whether funds are
+ever under your control, explains why naming it a wallet or a pot or a circle
+does not change the answer, and points at the usual way out, which is letting a
+licensed processor hold the funds. It is explicit that this is the clearest
+"pay a specialist" in the pack and says what to bring them.
+
+**The Floor lane no longer over-claims.** It now states its three members and
+their actual scope, and names what it does not cover: tax, trade licensing,
+employment law, insurance, import rules, sector regulators.
+
+**A rule for when no lane fits.** If no lane's description names the thing being
+asked, say so and stop. Do not pick the nearest one. An adjacent lane produces
+a fluent wrong answer that arrives through the same machinery as the right
+ones, so the founder cannot tell. Routing out is a result, not a failure.
+
+**The feedback loop survives a container.** The notebook and usage log live on
+the founder's machine, so a cloud session, which is exactly where mis-routing
+gets noticed, could not record it. `solo-tune` and the desk now hand over the
+lines to paste rather than letting the session's learning evaporate.
+
+## v0.6.1: The desk got teeth
+
+Found by running it. In a real session the desk read two files, named six more
+lanes it never opened, wrote the analysis itself instead of handing it to a
+lane, and skipped `solo-crew` on a four-skill crew. It then caught all three
+when asked, which is the only reason we know.
+
+The cause was the desk, not the model. A lane table full of names is enough to
+produce a confident routing answer without reading anything, and the desk's
+Evidence section never asked which files were actually opened, so nothing
+distinguished real routing from an impression of it.
+
+Three changes:
+
+- **Evidence now leads with files read.** Every lane file opened, by path. A
+  lane named but not opened does not count as routed, and the skill must say so
+  rather than leaving the impression.
+- **A self-check before answering.** Did I write domain content myself, did I
+  name a lane I did not open, is this a crew I failed to hand to `solo-crew`.
+  Those are the three failures in the order they occur.
+- **The bundle note moved to the top and states the rule** instead of
+  mentioning it in passing. A lane you have not opened is a name, not a skill.
+
+`solo-memory` now handles the case where the notebook is unreachable, which is
+every cloud session, by saying the decision was not recorded and offering the
+entry to paste, rather than skipping it silently.
+
 ## v0.6.0: One upload for cloud sessions
 
 Claude desktop, web, and cloud sessions do not see plugins or anything

@@ -37,6 +37,11 @@ Keep this to six lines. It is a contract, not a document.
 
 ## Lanes and crews
 
+A lane name is a pointer, not the thing. Bound means opened. When the skills
+are installed, the harness loads them. When you are running as a bundle, you
+open the file yourself, and until you have, you do not know how that lane
+works, only what it is called.
+
 **Validate**: they do not yet know if this should exist.
 `solo-customer-research` then `solo-market-research` then `solo-validate`.
 Add `solo-niche-advantage` first if the founder works in the industry already,
@@ -61,6 +66,42 @@ A crew of one skill: call it directly. Two or more in sequence: hand the crew to
 `solo-crew`, which carries context between members so the founder is not asked
 the same thing twice. Genuinely independent branches that merge: `solo-graph`.
 Work that should recur on a cadence rather than happen once: `solo-loop`.
+
+## If you cannot reach the notebook
+
+In a cloud or web session the founder's machine is not here, so nothing can be
+read or written. Say so once, near the end, and hand over the lines they should
+paste rather than leaving the session's learning to evaporate. `solo-memory`
+and `solo-tune` own the formats.
+
+## Before you answer, check yourself
+
+Three questions. Any yes means stop and correct it.
+
+1. **Did I produce domain content myself?** A pricing recommendation, a market
+   read, a legal opinion. If yes, you did the crew's job. Delete it and hand
+   the ask to the lane.
+2. **Did I name a lane I did not open?** Naming is not routing. Either open the
+   file or say plainly that you listed it without reading it.
+3. **Is this a crew of two or more and I did not hand it to `solo-crew`?**
+   Then the founder is about to be asked the same question three times.
+
+These are the three ways this skill fails in practice, in the order they
+happen. Checking costs one paragraph.
+
+## When no lane fits
+
+The lane list is what this pack covers. It is not a map of running a business.
+
+If no lane's description actually names the thing being asked, say that
+plainly, name what would answer it, and stop. Do not pick the nearest lane. A
+lane that is adjacent to the question will produce a fluent, well-structured,
+wrong answer, and the founder has no way to tell because it arrived through the
+same machinery as the right ones.
+
+"This pack has nothing for that, you want a payments lawyer" is a better answer
+than four confident paragraphs from the closest available skill. Routing out is
+a result, not a failure.
 
 ## Routing the ask apart
 
@@ -100,9 +141,18 @@ their place.
 
 ## Evidence
 
-The six-line contract, stated before any crew skill runs, plus at the end the
-exit condition marked met or `NOT VERIFIED` with what is missing. A handoff
-with no exit condition is not a handoff, it is a hope.
+Two things, and the first is not optional.
+
+**Files read.** List every lane file you actually opened, by path. A lane you
+named but did not open does not count as routed, and saying otherwise is the
+specific way this skill fails. If you named four lanes and opened one, say
+that.
+
+**The contract**, stated before any crew skill ran, plus the exit condition
+marked met or `NOT VERIFIED` with what is missing.
+
+A handoff with no exit condition is not a handoff, it is a hope. A routing
+decision with no files read is not routing, it is a guess wearing a lane name.
 
 ---
 Studio140 · see references/CONTRACT.md

@@ -5,8 +5,8 @@
   "plugins": [
     {
       "name": "soloagency",
-      "description": "v0.5. 22 skills for running a company on your own, and they tune themselves to how you actually use them. Describe a problem in your own words and it works out what you are actually asking, tells you what it would need to know, and keeps a notebook of what you decided and how it went.",
-      "version": "0.6.0",
+      "description": "v0.7. 23 skills for running a company on your own, and they tune themselves to how you actually use them. Describe a problem in your own words and it works out what you are actually asking, tells you what it would need to know, and keeps a notebook of what you decided and how it went.",
+      "version": "0.7.0",
       "source": "./",
       "author": { "name": "Studio140", "url": "https://www.140.studio/" }
     }

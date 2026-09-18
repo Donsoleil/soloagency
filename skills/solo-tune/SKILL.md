@@ -60,6 +60,25 @@ from the notebook instead.
 
 You approve or reject each. Nothing changes on its own.
 
+## When you cannot reach the log
+
+Cloud sessions, web, and anything in a container do not have the founder's
+machine, so neither file exists there. That is exactly where mis-routing gets
+noticed and exactly where it cannot be recorded, which means the loop designed
+to catch it is blind in the place it is most needed.
+
+So when something goes wrong in a session that cannot write: say it, and hand
+the founder the entry to paste. A block they can copy into
+`~/.soloagency/usage.jsonl` or the notebook, written for them, not a suggestion
+that they remember it later.
+
+```
+{"ts":"...","skill":"soloagency","asked":"money transmission rules",
+ "acted":false,"note":"routed to solo-compliance, which does not cover it"}
+```
+
+A lesson that stays in a closed tab teaches nothing.
+
 ## Sharing a lesson
 
 When a pattern is about the skill rather than about your business, it is

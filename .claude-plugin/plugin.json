@@ -1,6 +1,6 @@
 {
   "name": "soloagency",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "Skills for people running the whole company themselves. It tells you when it is guessing, reads your accounts before asking you to remember, flags the choices you cannot undo, and keeps a notebook on your machine so it stops asking you the same questions.",
   "author": { "name": "Studio140", "url": "https://www.140.studio/" },
   "repository": "https://github.com/donsoleil/soloagency",

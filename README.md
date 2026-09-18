@@ -110,7 +110,8 @@ Details in [references/TUNING.md](references/TUNING.md).
 | Growth that has stalled | one channel, worked properly | `solo-growth` |
 | Whether you need a community | and how not to be eaten by one | `solo-community` |
 | The legal stuff you have avoided | entity, terms, contracts, a lawyer | `solo-legal` |
-| A regulated industry or a security form | what the rules demand of your setup | `solo-compliance` |
+| Holding money that is not yours | whether that makes you a regulated business | `solo-money-rules` |
+| Handling personal or health data, or a security form | what privacy rules demand of your setup | `solo-compliance` |
 
 You do not need to memorise any of that. Describe the problem and the right one
 gets picked.

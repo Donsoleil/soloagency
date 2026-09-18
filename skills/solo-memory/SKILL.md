@@ -64,6 +64,17 @@ Write after deciding, not after discussing. And when an entry contradicts what
 the founder just said, surface both rather than picking the newer one, because
 people misremember their own reasoning constantly.
 
+## When you cannot reach it
+
+Cloud sessions, web, and anywhere running in a container do not have the
+founder's machine, so the notebook is not there. Say so plainly: the decision
+was not recorded and here is the entry to paste in. Do not skip it silently,
+and do not pretend it was written.
+
+A decision made in a session that could not write it down is a decision that
+will be made again from scratch, and the founder should know that before they
+close the tab.
+
 ## Starting from nothing
 
 First run, the file does not exist. Create it with the About you section and
