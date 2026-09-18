@@ -17,3 +17,5 @@ jobs:
           python3 -c "import json;[json.load(open(p)) for p in ['.claude-plugin/plugin.json','.claude-plugin/marketplace.json']];print('manifests valid')"
       - name: Check the installer is syntactically valid
         run: bash -n install-soloagency.sh
+      - name: Build the uploadable bundle
+        run: ./scripts/package-skills.sh

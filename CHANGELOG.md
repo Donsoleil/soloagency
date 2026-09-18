@@ -1,5 +1,24 @@
 # Changelog
 
+## v0.6.0: One upload for cloud sessions
+
+Claude desktop, web, and cloud sessions do not see plugins or anything
+installed on your own machine. Account skills are the only thing that reaches
+them, and the uploader takes one skill at a time: a single top-level folder,
+exactly one SKILL.md, no plugin manifest.
+
+`scripts/package-skills.sh` builds a bundle that satisfies all three. The front
+desk is the skill, and the other 21 travel with it as files in `lanes/` that it
+reads when a lane needs them, so routing still works from one upload rather
+than 22. It also writes one zip per skill in `dist/individual/` for anyone who
+wants only some of them.
+
+Every zip is checked after building: one top-level entry, exactly one SKILL.md,
+no manifest. CI builds the bundle on every push, so a broken packager is caught
+before a release rather than by a rejected upload.
+
+Download `soloagency.zip` from the latest release, or build it yourself.
+
 ## v0.5.1
 
 README corrections found by reading it against the repo rather than trusting

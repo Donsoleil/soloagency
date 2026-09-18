@@ -184,11 +184,31 @@ index skills at launch.
 |---|---|
 | Claude Code | plugin, or the installer |
 | Codex, Cursor, OpenCode, Goose, Berd | the installer |
-| Claude desktop and web | upload the skill folders as account skills, under Settings, Capabilities, Skills |
+| Claude desktop and web | upload the bundle as an account skill, below |
 | Cloud and remote sessions | account skills reach these. Plugins and local installs do not, since each session is a fresh container |
 
-If you work in cloud sessions, the account-skill route is the one that travels.
-A plugin installed on your own machine stays on your own machine.
+### Claude desktop, web, and cloud sessions
+
+These do not see plugins or anything installed on your own machine. Every cloud
+session is a fresh container. Account skills are the only thing that travels,
+so upload the bundle:
+
+Download `soloagency.zip` from the
+[latest release](https://github.com/Donsoleil/soloagency/releases/latest), then
+go to Settings, Capabilities, Skills, and upload it.
+
+That is one upload for the whole pack. The front desk is the skill, and the
+other 21 ride along as files it reads when it needs them, so routing still
+works. Ask in plain words exactly as you would anywhere else.
+
+Building it yourself instead:
+
+```
+./scripts/package-skills.sh
+```
+
+That writes `dist/soloagency.zip`, plus `dist/individual/` with one zip per
+skill if you would rather upload only some of them.
 
 ### Updating
 
