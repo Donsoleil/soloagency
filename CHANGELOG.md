@@ -1,5 +1,24 @@
 # Changelog
 
+## v0.7.1: Install instructions for people who do not use a terminal
+
+The README opened with a plugin command, which is useless to most of the people
+this pack is written for. Someone running a business on their own is not
+necessarily running Claude Code.
+
+The page now opens with four numbered steps for installing in Claude in the
+browser or the app: download the zip from the latest release, Settings,
+Capabilities, Skills, upload, check the switch is on, start a chat. No terminal,
+nothing installed on their machine, works on their phone afterwards. Plus the
+two things that actually go wrong, downloading the source archive instead of
+the bundle, and not starting a fresh chat.
+
+Everything for Claude Code, Codex, Cursor, OpenCode, Goose and Berd moved below
+and is now labelled as such.
+
+Note for releases: attach `dist/soloagency.zip` to every release, or the
+download step above has nothing to point at. CI now checks the file is built.
+
 ## v0.7.0: The gap the desk could not see
 
 A second real run routed confidently into a lane that could not hold the

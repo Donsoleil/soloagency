@@ -19,3 +19,5 @@ jobs:
         run: bash -n install-soloagency.sh
       - name: Build the uploadable bundle
         run: ./scripts/package-skills.sh
+      - name: The bundle the README tells people to download must exist
+        run: test -f dist/soloagency.zip && echo "soloagency.zip exists"

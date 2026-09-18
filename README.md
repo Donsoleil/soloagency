@@ -11,7 +11,44 @@ outside what it can help with.
 
 By [Studio140](https://www.140.studio/). MIT licensed.
 
-## Try it
+## Install it in Claude, no terminal needed
+
+If you use Claude in your browser or the Claude app, this takes about a minute
+and you do not need to install anything on your computer.
+
+**1. Download the file.**
+Go to [the latest release](https://github.com/Donsoleil/soloagency/releases/latest)
+and click `soloagency.zip` to download it. Do not unzip it. Claude wants the zip
+exactly as it is.
+
+**2. Open your Claude settings.**
+In Claude, click your name or picture in the bottom left corner, then
+**Settings**. In the list on the left, click **Capabilities**, then **Skills**.
+
+**3. Upload it.**
+Click **Upload skill**, choose the `soloagency.zip` you just downloaded, and
+click **Save**. Claude runs a quick security check, then shows soloagency in
+your list with a switch beside it. Make sure the switch is on.
+
+**4. Use it.**
+Start a new chat and say what is on your mind, the way you would tell a friend.
+No commands, no menus, no need to know which part you are using.
+
+> I'm trying to decide whether to raise my prices next term. Not sure if I
+> should, or by how much, or how to tell my customers.
+
+That is the whole thing. It works in every chat from now on, including on your
+phone.
+
+**If something goes wrong.** If the upload is refused, you probably downloaded
+the wrong file. You want the one called exactly `soloagency.zip`, not the ones
+called `Source code`. If it does not seem to be doing anything, check the switch
+is on in Settings and then start a brand new chat, because it only loads when a
+chat begins.
+
+---
+
+## Already use Claude Code or a terminal?
 
 ```
 /plugin marketplace add Donsoleil/soloagency
@@ -119,10 +156,14 @@ gets picked.
 Nothing here is legal, tax, or financial advice. It is preparation for a
 conversation with someone licensed.
 
-## Install
+## Installing it on other tools
 
-Pick one of the two. Do not do both for the same tool, or you get two copies of
-every skill competing to answer.
+Everything below is for people who use Claude Code, Codex, Cursor, OpenCode,
+Goose or Berd. If you just use Claude in the browser or the app, you are
+already done, see the top of this page.
+
+Pick one path per tool. Do not do both for the same tool, or you get two copies
+of every skill competing to answer.
 
 ### Claude Code, and any tool with plugins
 
