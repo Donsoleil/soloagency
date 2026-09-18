@@ -1,8 +1,22 @@
 {
   "_comment": "Rules the gate enforces. Point gate.sh at any skill library with its own rules file.",
   "min_description_chars": 120,
-  "required_sections": ["Evidence"],
-  "required_strings": ["Studio140", "soloagency/memory.md"],
-  "banned_strings": ["\u2014"],
-  "checked_docs": ["README.md", "ROADMAP.md", "CHANGELOG.md", "references/CONTRACT.md", "references/MEMORY.md"]
+  "required_sections": [
+    "Evidence"
+  ],
+  "required_strings": [
+    "Studio140",
+    "soloagency/memory.md"
+  ],
+  "banned_strings": [
+    "\u2014"
+  ],
+  "checked_docs": [
+    "README.md",
+    "ROADMAP.md",
+    "CHANGELOG.md",
+    "references/CONTRACT.md",
+    "references/MEMORY.md",
+    "references/TUNING.md"
+  ]
 }

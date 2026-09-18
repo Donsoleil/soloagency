@@ -72,6 +72,12 @@ if [[ "$TARGET" == "$HERE/skills" ]]; then
   done <<< "$DOCS"
 fi
 
+  # the privacy promise is load-bearing: nothing may phone home
+  # Call syntax only. Words like "analytics" are legitimate business vocabulary.
+  offender=$(grep -rlnE "curl +(-[A-Za-z]+ +)*https?://|wget +https?://|requests\.(get|post)\(|urllib\.request|fetch\( *[\"'\`]https?://" \
+       "$TARGET"/*/SKILL.md 2>/dev/null | head -1)
+  [[ -n "$offender" ]] && note "looks like a network call in $offender (nothing here may phone home)"
+
 echo
 if [[ $fail -eq 0 ]]; then
   echo "PASS: $count skills meet the contract"

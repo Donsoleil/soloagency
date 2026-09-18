@@ -81,6 +81,11 @@ decided, why, whether it is one-way, the evidence behind it, and
 A decision made and not written down is a decision you will make again from
 scratch in four months.
 
+Write one line to `~/.soloagency/usage.jsonl` as well: which skill ran, roughly
+what for, and whether the founder acted on it. No numbers, no business detail.
+That log is what `solo-tune` reads later to work out which skills are earning
+their place.
+
 ## Evidence
 
 The funnel table with absolute numbers per stage, the biggest-loss step named,

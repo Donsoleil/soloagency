@@ -65,6 +65,25 @@ businesses in general.
 Full detail, including how to move it or turn it off:
 [references/MEMORY.md](references/MEMORY.md).
 
+## It gets better as you use it
+
+Two loops, and neither one sends anything without you reading it first.
+
+**Yours.** Alongside the notebook, soloagency keeps a short usage log of which
+skills ran and whether you acted on the answer. Run `solo-tune` after a few
+weeks and it reads both, finds the patterns, and proposes edits to the skills
+themselves. Skills that never fire. Skills you keep ignoring. The wrong one
+answering. Advice you took that went badly. You approve each change, nothing
+edits itself.
+
+**Everyone's.** When a lesson is about the skill rather than about your
+business, `solo-tune` offers to open an issue here. It writes the text, shows
+it to you in full, and sends nothing unless you say yes. No numbers, no names,
+no prices.
+
+There is no telemetry and no phone home. The code contains nothing that could.
+Details in [references/TUNING.md](references/TUNING.md).
+
 ## What it can help with
 
 | When you are stuck on | Ask about | It is called |
@@ -156,6 +175,18 @@ gets added.
 It never overwrites a real directory you wrote yourself, it reports what it
 skipped, and it is safe to re-run. Restart each agent afterwards, since they
 index skills at launch.
+
+### Where it works
+
+| Surface | How it gets there |
+|---|---|
+| Claude Code | plugin, or the installer |
+| Codex, Cursor, OpenCode, Goose, Berd | the installer |
+| Claude desktop and web | upload the skill folders as account skills, under Settings, Capabilities, Skills |
+| Cloud and remote sessions | account skills reach these. Plugins and local installs do not, since each session is a fresh container |
+
+If you work in cloud sessions, the account-skill route is the one that travels.
+A plugin installed on your own machine stays on your own machine.
 
 ### Updating
 

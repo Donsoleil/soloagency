@@ -23,7 +23,12 @@ Lanes and their skills:
 - Graph run with a merge step and an independent checker
 - Standing loops: weekly money check, monthly trajectory check
 
-## v0.4: The notebook and plain language (this release)
+## v0.4: The notebook and plain language (shipped)
+
+## v0.5: Self-tuning (this release)
+
+The pack learns from how it is actually used, locally, and lessons travel back
+by a person choosing to send them.
 
 The learning layer, and a rewrite of every user-facing word for the person
 actually using this rather than the person who built it.

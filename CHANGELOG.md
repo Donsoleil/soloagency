@@ -1,5 +1,30 @@
 # Changelog
 
+## v0.5.0: It tunes itself
+
+**`solo-tune`.** Reads the local usage log at `~/.soloagency/usage.jsonl` and
+your notebook, finds patterns in how you actually use the pack, and proposes
+edits to the skill files. Skills that never fire. Skills that fire and get
+ignored. The wrong skill answering. Advice you followed that went badly. It
+needs three occurrences or one recorded bad outcome before proposing anything,
+shows each change as a diff, and edits nothing without approval.
+
+**Sharing a lesson.** When a pattern is about the skill rather than about your
+business, `solo-tune` offers to open an issue on this repo. It writes the text,
+shows you the exact text, and sends nothing unless you say yes. No numbers, no
+names, no prices. There is an issue template for it.
+
+**No telemetry, and now it is enforced.** The gate fails any skill containing
+network-call syntax, so the promise in the README is checked on every push
+rather than merely written down. Narrowed to call syntax, since words like
+"analytics" are legitimate business vocabulary.
+
+**Where it works.** The README now has a surfaces table. Plugins and local
+installs do not travel to cloud or remote sessions, which are fresh containers.
+Account skills do. Worth knowing before you wonder why a skill is missing.
+
+The other nineteen skills now write a usage line as well as a notebook entry.
+
 ## v0.4.0: The notebook, and plain language
 
 **The notebook.** soloagency now keeps one plain markdown file on your machine
