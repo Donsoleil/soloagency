@@ -58,6 +58,16 @@ Crowded with happy customers is the worst outcome, worse than empty. Crowded
 with frustrated customers is the best. Empty usually means no money, not
 undiscovered opportunity, and the burden of proof is on you to show otherwise.
 
+## The notebook
+
+Read `~/.soloagency/memory.md` before asking the founder anything it already
+answers. When this skill produces a decision, write the entry: what was
+decided, why, whether it is one-way, the evidence behind it, and
+`Outcome: (open)`. `solo-memory` owns the format.
+
+A decision made and not written down is a decision you will make again from
+scratch in four months.
+
 ## Evidence
 
 The bottom-up calculation with a cited source per input, the customers-needed-

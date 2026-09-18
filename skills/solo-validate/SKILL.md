@@ -61,6 +61,16 @@ the wrong people tested nothing.
 Running the test is reversible. Building six months of product on a passed
 test you designed to be unfailable is not.
 
+## The notebook
+
+Read `~/.soloagency/memory.md` before asking the founder anything it already
+answers. When this skill produces a decision, write the entry: what was
+decided, why, whether it is one-way, the evidence behind it, and
+`Outcome: (open)`. `solo-memory` owns the format.
+
+A decision made and not written down is a decision you will make again from
+scratch in four months.
+
 ## Evidence
 
 The written threshold sentence dated before the test, the raw numbers after,

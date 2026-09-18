@@ -83,6 +83,16 @@ Some asks should get an answer, not a crew. A factual question, a one-line
 decision, a founder who is venting. Over-routing is its own failure and it
 burns the founder's patience on ceremony.
 
+## The notebook
+
+Read `~/.soloagency/memory.md` before asking the founder anything it already
+answers. When this skill produces a decision, write the entry: what was
+decided, why, whether it is one-way, the evidence behind it, and
+`Outcome: (open)`. `solo-memory` owns the format.
+
+A decision made and not written down is a decision you will make again from
+scratch in four months.
+
 ## Evidence
 
 The six-line contract, stated before any crew skill runs, plus at the end the

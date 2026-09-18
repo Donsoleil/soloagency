@@ -56,6 +56,16 @@ Read the first two sentences to someone from the segment, out loud, and ask
 what they think it does and who it is for. If they hesitate, the headline is
 wrong. This test takes two minutes and beats a week of iterating alone.
 
+## The notebook
+
+Read `~/.soloagency/memory.md` before asking the founder anything it already
+answers. When this skill produces a decision, write the entry: what was
+decided, why, whether it is one-way, the evidence behind it, and
+`Outcome: (open)`. `solo-memory` owns the format.
+
+A decision made and not written down is a decision you will make again from
+scratch in four months.
+
 ## Evidence
 
 The shipped URL, the headline stated as the customer's own phrase with a

@@ -53,6 +53,16 @@ Do not fill gaps with plausible defaults. If the customer is unnamed, say it is
 unnamed. An invented segment produces an entire plan aimed at nobody, and it
 reads confident the whole way down, which is what makes it expensive.
 
+## The notebook
+
+Read `~/.soloagency/memory.md` before asking the founder anything it already
+answers. When this skill produces a decision, write the entry: what was
+decided, why, whether it is one-way, the evidence behind it, and
+`Outcome: (open)`. `solo-memory` owns the format.
+
+A decision made and not written down is a decision you will make again from
+scratch in four months.
+
 ## Evidence
 
 The output block above, with `Missing` populated honestly. A brief where

@@ -71,6 +71,16 @@ must raise on existing accounts, give long notice, explain it once without
 apologizing, and expect churn concentrated in the cheapest cohort, which is
 usually fine.
 
+## The notebook
+
+Read `~/.soloagency/memory.md` before asking the founder anything it already
+answers. When this skill produces a decision, write the entry: what was
+decided, why, whether it is one-way, the evidence behind it, and
+`Outcome: (open)`. `solo-memory` owns the format.
+
+A decision made and not written down is a decision you will make again from
+scratch in four months.
+
 ## Evidence
 
 The value metric with a one-line reason, the tier table with prices, the

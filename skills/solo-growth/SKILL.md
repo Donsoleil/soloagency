@@ -59,6 +59,16 @@ customers, or that costs hours you cannot spare. Solo founders accumulate
 obligations, newsletters, channels, communities, and never prune, and the
 pruning is where the hours come from.
 
+## The notebook
+
+Read `~/.soloagency/memory.md` before asking the founder anything it already
+answers. When this skill produces a decision, write the entry: what was
+decided, why, whether it is one-way, the evidence behind it, and
+`Outcome: (open)`. `solo-memory` owns the format.
+
+A decision made and not written down is a decision you will make again from
+scratch in four months.
+
 ## Evidence
 
 Where existing customers actually came from, the single channel chosen with the

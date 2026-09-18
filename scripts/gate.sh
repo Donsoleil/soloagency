@@ -1,52 +1,80 @@
 #!/usr/bin/env bash
-# Checks every skill against the soloagency contract.
-# Run locally with ./scripts/gate.sh, and in CI on every push and PR.
+# Checks skills against a written contract.
+#
+#   ./scripts/gate.sh                  check this repo
+#   ./scripts/gate.sh ~/.claude/skills check any other skill library
+#   ./scripts/gate.sh <dir> <rules>    use a different rules file
+#
+# Rules live in .gate.json so this script is not specific to soloagency.
+# Point it at your own skill library to find the ones that will misfire.
 set -uo pipefail
-cd "$(dirname "$0")/.."
+
+HERE="$(cd "$(dirname "$0")/.." && pwd)"
+TARGET="${1:-$HERE/skills}"
+RULES="${2:-$HERE/.gate.json}"
+
+[[ -d "$TARGET" ]] || { echo "not a directory: $TARGET"; exit 1; }
+[[ -f "$RULES"  ]] || { echo "no rules file: $RULES"; exit 1; }
+
+rule(){ python3 -c '
+import json,sys
+r=json.load(open(sys.argv[1]))
+v=r.get(sys.argv[2])
+print("\n".join(v) if isinstance(v,list) else (v if v is not None else ""))
+' "$RULES" "$1"; }
+
+MIN_DESC=$(rule min_description_chars); MIN_DESC=${MIN_DESC:-0}
+REQ_SECTIONS=$(rule required_sections)
+REQ_STRINGS=$(rule required_strings)
+BANNED=$(rule banned_strings)
+DOCS=$(rule checked_docs)
+
+
 
 fail=0
-note() { echo "  FAIL  $1"; fail=1; }
+note(){ echo "  FAIL  $1"; fail=1; }
+count=0
 
-[[ -d skills ]] || { echo "no skills/ directory"; exit 1; }
-
-for d in skills/*/; do
-  n=$(basename "$d")
-  f="$d/SKILL.md"
+for d in "$TARGET"/*/; do
+  [[ -f "$d/SKILL.md" ]] || continue
+  n=$(basename "$d"); f="$d/SKILL.md"; count=$((count+1))
   echo "$n"
 
-  [[ -f "$f" ]] || { note "no SKILL.md"; continue; }
-
-  # frontmatter opens on line 1 and name matches the directory
   [[ "$(sed -n '1p' "$f")" == "---" ]] || note "frontmatter does not start on line 1"
   fm=$(sed -n '2s/^name: //p' "$f")
   [[ "$fm" == "$n" ]] || note "frontmatter name '$fm' does not match directory '$n'"
 
-  # a description exists and is substantial enough to route on
   desc=$(sed -n 's/^description: //p' "$f" | head -1)
   [[ -n "$desc" ]] || note "no description"
-  [[ ${#desc} -ge 120 ]] || note "description is ${#desc} chars, too thin to route on (want 120+)"
-
-  # the contract
+  [[ ${#desc} -ge $MIN_DESC ]] || note "description is ${#desc} chars, too thin to route on (want ${MIN_DESC}+)"
   grep -qi "Do NOT use" "$f" || note "no anti-trigger (needs a 'Do NOT use' clause)"
-  grep -q "^## Evidence" "$f"  || note "no ## Evidence section"
-  grep -q "Studio140" "$f"     || note "no Studio140 credit line"
 
-  # house style
-  grep -q "—" "$f" && note "contains an em dash"
+  while read -r sec; do [[ -z "$sec" ]] && continue
+    grep -q "^## $sec" "$f" || note "no ## $sec section"
+  done <<< "$REQ_SECTIONS"
+
+  while read -r str; do [[ -z "$str" ]] && continue
+    grep -qF "$str" "$f" || note "missing required string: $str"
+  done <<< "$REQ_STRINGS"
+
+  while read -r bad; do [[ -z "$bad" ]] && continue
+    grep -qF "$bad" "$f" && note "contains banned string: $bad"
+  done <<< "$BANNED"
 done
 
-# repo docs follow the same house style
-echo "repo docs"
-for f in README.md ROADMAP.md CHANGELOG.md references/CONTRACT.md; do
-  [[ -f "$f" ]] || continue
-  grep -q "—" "$f" && note "$f contains an em dash"
-done
-grep -q "Studio140" README.md || note "README.md has no Studio140 credit"
-grep -q "Studio140" LICENSE   || note "LICENSE has no Studio140 copyright"
+if [[ "$TARGET" == "$HERE/skills" ]]; then
+  echo "repo docs"
+  while read -r doc; do [[ -z "$doc" ]] && continue
+    [[ -f "$HERE/$doc" ]] || continue
+    while read -r bad; do [[ -z "$bad" ]] && continue
+      grep -qF "$bad" "$HERE/$doc" && note "$doc contains banned string: $bad"
+    done <<< "$BANNED"
+  done <<< "$DOCS"
+fi
 
 echo
 if [[ $fail -eq 0 ]]; then
-  echo "PASS: $(ls -d skills/*/ | wc -l | tr -d ' ') skills and the repo docs meet the contract"
+  echo "PASS: $count skills meet the contract"
 else
   echo "FAILED. See above."
 fi

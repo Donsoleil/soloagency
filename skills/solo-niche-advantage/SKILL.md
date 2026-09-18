@@ -51,6 +51,16 @@ practitioners will pay for, because you are one person and possibly an unusual
 one. Everything here still has to survive `solo-validate`. Expertise shortens
 discovery, it does not replace it.
 
+## The notebook
+
+Read `~/.soloagency/memory.md` before asking the founder anything it already
+answers. When this skill produces a decision, write the entry: what was
+decided, why, whether it is one-way, the evidence behind it, and
+`Outcome: (open)`. `solo-memory` owns the format.
+
+A decision made and not written down is a decision you will make again from
+scratch in four months.
+
 ## Evidence
 
 A named list of access points with rough audience size per point, the two you

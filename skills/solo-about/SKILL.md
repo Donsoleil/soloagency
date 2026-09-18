@@ -5,8 +5,10 @@ description: "Creates and maintains ABOUT.md, the founder context file the rest 
 
 # solo-about
 
-Write once, read by everything. The file lives at `ABOUT.md` in the project
-root so it travels with the work and stays under version control.
+Write once, read by everything. It lives at the top of your notebook,
+`~/.soloagency/memory.md`, so every skill can read it and you never answer the
+same question twice. `solo-memory` owns the file; this skill owns what the
+About you section says.
 
 ## What goes in it
 
@@ -50,12 +52,12 @@ per seat" tells the next reader something a bare current value does not.
 
 ## How other skills use it
 
-They read it, they do not re-ask. If a skill is asking you something ABOUT.md
+They read it, they do not re-ask. If a skill asks you something the notebook
 already answers, that is a bug in the skill, not in your file.
 
 ## Evidence
 
-The file exists at a stated path, under 400 words, with a date, and with the
+The About you section exists in the notebook, under 400 words, dated, with the
 income floor and hours-per-week both filled in. Those two blank means
 `NOT VERIFIED`, because they are the two that change the advice most.
 

@@ -155,5 +155,12 @@ if [[ -d "$HOME/.claude/plugins" ]] && grep -rqs "soloagency" "$HOME/.claude/plu
 fi
 
 echo
+echo "One thing to know: soloagency keeps a notebook on this machine at"
+echo "  ~/.soloagency/memory.md"
+echo "It records your decisions, the reasoning, and what happened, so the skills"
+echo "stop asking you the same questions. Nothing is sent anywhere. Nothing is"
+echo "written until you actually use a skill. To put it elsewhere, set"
+echo "SOLOAGENCY_HOME. Details: references/MEMORY.md"
+echo
 echo "done. To update later: re-run with the new zip, links pick it up automatically."
 echo "To uninstall: find the roots above and remove links pointing into $CANON"

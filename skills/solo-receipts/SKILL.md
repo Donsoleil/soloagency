@@ -63,6 +63,16 @@ If you previously claimed something and the artifact does not support it, say
 so directly and correct it. No hedging, no burying it mid-paragraph. The whole
 point of this skill is that the correction is cheap now and expensive later.
 
+## The notebook
+
+Read `~/.soloagency/memory.md` before asking the founder anything it already
+answers. When this skill produces a decision, write the entry: what was
+decided, why, whether it is one-way, the evidence behind it, and
+`Outcome: (open)`. `solo-memory` owns the format.
+
+A decision made and not written down is a decision you will make again from
+scratch in four months.
+
 ## Evidence
 
 The three-layer block, with at least one artifact path or URL per Verified line.

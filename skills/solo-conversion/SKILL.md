@@ -71,6 +71,16 @@ within a few weeks, do not run a test: make the better-reasoned change and
 watch the trend. Calling a test at 40 conversions is how founders talk
 themselves into noise.
 
+## The notebook
+
+Read `~/.soloagency/memory.md` before asking the founder anything it already
+answers. When this skill produces a decision, write the entry: what was
+decided, why, whether it is one-way, the evidence behind it, and
+`Outcome: (open)`. `solo-memory` owns the format.
+
+A decision made and not written down is a decision you will make again from
+scratch in four months.
+
 ## Evidence
 
 The funnel table with absolute numbers per stage, the biggest-loss step named,

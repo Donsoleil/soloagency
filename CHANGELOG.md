@@ -1,5 +1,35 @@
 # Changelog
 
+## v0.4.0: The notebook, and plain language
+
+**The notebook.** soloagency now keeps one plain markdown file on your machine
+at `~/.soloagency/memory.md`, holding a short description of your business,
+every decision with the reasoning behind it, and what happened afterwards. The
+new `solo-memory` skill owns it, `solo-about` writes the top of it, and all
+nineteen other skills read it before asking and write to it after a decision.
+Nothing is sent anywhere. Nothing is written until a skill runs. Move it with
+`SOLOAGENCY_HOME`. See `references/MEMORY.md`.
+
+The outcome line is the point. A record of what you decided and what actually
+happened is worth more than general advice, and it cannot be backfilled later.
+
+**The gate is no longer specific to this pack.** `scripts/gate.sh` now reads
+its rules from `.gate.json` and takes a target directory, so it can check any
+skill library:
+
+```
+./scripts/gate.sh ~/.claude/skills my-rules.json
+```
+
+It also now checks that every skill references the notebook.
+
+**Plain language.** The README and the contract were written for someone who
+builds agent systems. They are now written for someone running a business on
+their own. The skills table says what you are stuck on rather than what the
+skill is architecturally.
+
+The installer tells you about the notebook when it runs.
+
 ## v0.3.1
 
 Install instructions rewritten around the two paths that are actually verified:

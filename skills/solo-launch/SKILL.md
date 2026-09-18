@@ -57,6 +57,16 @@ You can launch repeatedly: new segment, new capability, new channel. A first
 launch that flopped is not a verdict, it is usually evidence the precondition
 was not met.
 
+## The notebook
+
+Read `~/.soloagency/memory.md` before asking the founder anything it already
+answers. When this skill produces a decision, write the entry: what was
+decided, why, whether it is one-way, the evidence behind it, and
+`Outcome: (open)`. `solo-memory` owns the format.
+
+A decision made and not written down is a decision you will make again from
+scratch in four months.
+
 ## Evidence
 
 The three precondition counts stated before the date was picked, the messages

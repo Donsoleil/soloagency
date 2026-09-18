@@ -56,6 +56,16 @@ unsupervised branch produces work nobody checks. If the graph needs four
 branches, the ask is too big for this week and should be cut rather than
 parallelized.
 
+## The notebook
+
+Read `~/.soloagency/memory.md` before asking the founder anything it already
+answers. When this skill produces a decision, write the entry: what was
+decided, why, whether it is one-way, the evidence behind it, and
+`Outcome: (open)`. `solo-memory` owns the format.
+
+A decision made and not written down is a decision you will make again from
+scratch in four months.
+
 ## Evidence
 
 The shape block filled in, per-branch evidence artifacts, the merged result

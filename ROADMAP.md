@@ -18,12 +18,17 @@ Lanes and their skills:
 - `solo-receipts`: the evidence gate, cut to what one person can produce
 - `solo-about`: founder context file so the other skills stop asking the same questions
 
-## v0.3: Teams, graph, loops (this release)
+## v0.3: Teams, graph, loops (shipped)
 - Ordered crews per lane rather than one skill at a time
 - Graph run with a merge step and an independent checker
 - Standing loops: weekly money check, monthly trajectory check
 
-## v0.4: Research, UX, design, product
+## v0.4: The notebook and plain language (this release)
+
+The learning layer, and a rewrite of every user-facing word for the person
+actually using this rather than the person who built it.
+
+## v0.5: Research, UX, design, product
 - solo-prioritize, solo-translate, solo-brand, solo-go-live, and the discovery
   and interface skills that belong to a lane rather than a one-off
 

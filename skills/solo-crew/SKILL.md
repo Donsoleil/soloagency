@@ -55,6 +55,16 @@ If halfway through it becomes clear the lane was misread, say so and stop. Going
 back to the desk costs one message. Finishing the wrong lane costs the whole
 run and the founder's trust in the routing.
 
+## The notebook
+
+Read `~/.soloagency/memory.md` before asking the founder anything it already
+answers. When this skill produces a decision, write the entry: what was
+decided, why, whether it is one-way, the evidence behind it, and
+`Outcome: (open)`. `solo-memory` owns the format.
+
+A decision made and not written down is a decision you will make again from
+scratch in four months.
+
 ## Evidence
 
 The final packet, with every `Established` fact carrying the member that

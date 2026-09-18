@@ -54,6 +54,16 @@ consuming your build time with no attributable return, closing it deliberately,
 with an explanation and an archive, is a legitimate outcome rather than a
 failure.
 
+## The notebook
+
+Read `~/.soloagency/memory.md` before asking the founder anything it already
+answers. When this skill produces a decision, write the entry: what was
+decided, why, whether it is one-way, the evidence behind it, and
+`Outcome: (open)`. `solo-memory` owns the format.
+
+A decision made and not written down is a decision you will make again from
+scratch in four months.
+
 ## Evidence
 
 The gate answered honestly with the engaged-user count, the one reason stated,

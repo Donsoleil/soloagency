@@ -63,6 +63,16 @@ Entity choice is reversible with effort. Signatures, equity grants, and
 anything with a counterparty are one-way. Slow down for those and get a real
 read.
 
+## The notebook
+
+Read `~/.soloagency/memory.md` before asking the founder anything it already
+answers. When this skill produces a decision, write the entry: what was
+decided, why, whether it is one-way, the evidence behind it, and
+`Outcome: (open)`. `solo-memory` owns the format.
+
+A decision made and not written down is a decision you will make again from
+scratch in four months.
+
 ## Evidence
 
 A checklist with each item marked done, templated pending review, or not needed

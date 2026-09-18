@@ -1,82 +1,101 @@
 # soloagency
 
-Skills for people running the whole company themselves.
+You are the whole company. There is nobody to ask whether the price is right,
+whether the contract is fine to sign, or whether the thing you spent the
+weekend on was worth doing.
+
+soloagency is a set of skills for that. You describe the problem in your own
+words, and it works out which question you are actually asking, tells you what
+it would need to know to answer properly, and says plainly when something is
+outside what it can help with.
 
 By [Studio140](https://www.140.studio/). MIT licensed.
 
-**v0.3, Teams and loops.** Twenty skills. A front desk that takes a fuzzy ask
-and routes it, a brief step that sharpens it first, an evidence gate that
-catches work that did not happen, crews and graphs for work spanning several
-skills, standing loops that notice problems without being asked, and the
-thirteen business skills underneath:
-who you are building for, whether they will pay, what to charge, how to take
-the money, how to get the first customers, and the legal floor under all of it.
-
-Start with `soloagency` if you are not sure which skill you need.
-
-The research, UX, design and product lanes ship in v0.4. See [ROADMAP.md](ROADMAP.md) and [CHANGELOG.md](CHANGELOG.md).
-
-## Quick start
+## Try it
 
 ```
 /plugin marketplace add Donsoleil/soloagency
 /plugin install soloagency@soloagency-marketplace
 ```
 
-Then ask in plain words, no skill name needed:
+Then just say what is on your mind. No commands, no picking a skill.
 
 > I'm trying to decide whether to raise my prices next term. Not sure if I
 > should, or by how much, or how to tell my customers.
 
-The front desk reads that as three asks wearing one sentence, names which comes
-first, flags the price change as one-way because it hits people who already
-signed up, and tells you which numbers it is missing rather than inventing
-them.
+What comes back is not a pricing lecture. It notices that is three separate
+problems in one sentence, says which to deal with first, warns you that raising
+prices on people who already signed up is hard to walk back, and tells you it
+cannot give you a number until it knows what each unit actually costs you.
 
 Not using a tool with plugins? See [Install](#install).
 
-## What makes these different
+## The three rules it works by
 
-Most founder-advice skills hand you a checklist. These four rules, spelled out
-in [references/CONTRACT.md](references/CONTRACT.md), are enforced in every
-skill body:
+**It tells you when it is guessing.** Every answer ends with what it is based
+on. If it made something up because a number was missing, it says so instead of
+producing a confident figure you might act on.
 
-1. **Evidence, not assertion.** Each skill names the output that proves it ran.
-   No output, and the answer says `NOT VERIFIED`.
-2. **Read before you recommend.** If Stripe knows your prices, the skill reads
-   Stripe instead of asking you to remember them.
-3. **Name the reversibility.** Anything one-way, a price change on existing
-   customers, a signature, a compliance-shaped architecture decision, gets
-   flagged as one-way before it is recommended.
-4. **Route out, don't fake competence.** These cover business. When the ask
-   turns into code or interface, they say so and name the specialist.
+**It reads before it asks.** If your payment account knows what you charge, it
+looks rather than asking you to remember. And it keeps a notebook (below) so
+you never explain your business twice.
 
-## Skills
+**It says when something is one-way.** Some choices you can undo by Friday.
+Others, like changing the price on existing customers or signing something, you
+cannot. It flags the difference before you act, not after.
 
-| Lane | Skill | For |
+There is a fourth, less glamorous rule: it tells you when a problem is outside
+what it covers. It handles the business side. When the answer is really about
+code or design, it says so and points you elsewhere rather than bluffing.
+
+## The notebook
+
+soloagency keeps one plain text file on your computer at
+`~/.soloagency/memory.md`.
+
+It holds a short description of your business, every real decision you make,
+why you made it, and what happened afterwards. Nothing gets sent anywhere and
+nothing can be.
+
+This is what makes it better in month six than in week one. It stops asking you
+the same questions, and the record of what you tried and how it went is worth
+more than any general advice, because it is about your business rather than
+businesses in general.
+
+Full detail, including how to move it or turn it off:
+[references/MEMORY.md](references/MEMORY.md).
+
+## What it can help with
+
+| When you are stuck on | Ask about | It is called |
 |---|---|---|
-| Desk | `soloagency` | Fuzzy ask in, lane and crew out |
-| | `solo-crew` | Run a lane as a team, context carried between members |
-| | `solo-graph` | Parallel branches, merged, independently checked |
-| | `solo-loop` | Standing checks with thresholds that mean act |
-| | `solo-brief` | Sharpen the ask before anyone acts on it |
-| | `solo-receipts` | Verified, Reported, Not verified, kept apart |
-| | `solo-about` | Founder context, written once, read by everything |
-| Validate | `solo-customer-research` | Who this is actually for, in their words |
-| | `solo-market-research` | Bottom-up sizing, competitor teardown |
-| | `solo-validate` | Will anyone pay, tested before you build |
-| | `solo-niche-advantage` | Turning domain expertise into distribution |
-| Money | `solo-pricing` | Value metric, tiers, the number |
-| | `solo-payments` | Taking money reliably, plugging the leaks |
-| | `solo-conversion` | Finding and fixing the funnel leak |
-| Launch and grow | `solo-landing-page` | One page that sells in eight seconds |
-| | `solo-launch` | Concentrating demand you already built |
-| | `solo-growth` | One channel, worked properly |
-| | `solo-community` | Whether to have one, and how not to be eaten |
-| Floor | `solo-legal` | Entity, terms, contracts, and what needs a lawyer |
-| | `solo-compliance` | What a regulation demands of your actual stack |
+| Not knowing where to start | anything, in your own words | `soloagency` |
+| A vague plan you cannot act on | what you are actually trying to do | `solo-brief` |
+| Whether something really got done | proof rather than reassurance | `solo-receipts` |
+| Explaining your business again | telling it about you once | `solo-about` |
+| Remembering what you decided | what you chose and how it went | `solo-memory` |
+| A job that needs several steps | doing the whole thing at once | `solo-crew` |
+| Too much to do at once | what can run in parallel | `solo-graph` |
+| Only noticing problems too late | a weekly or monthly check | `solo-loop` |
+| Not knowing who you are selling to | who your customer actually is | `solo-customer-research` |
+| Whether the market is big enough | the size of it, and who else is in it | `solo-market-research` |
+| Whether to build the thing at all | testing if anyone will pay first | `solo-validate` |
+| Competing with someone better funded | using what you know that they do not | `solo-niche-advantage` |
+| What to charge | pricing, tiers, raising your rates | `solo-pricing` |
+| Getting paid without losing money | payments, failed cards, tax | `solo-payments` |
+| People visiting but not buying | where they drop off | `solo-conversion` |
+| A homepage that does not sell | what it should say and in what order | `solo-landing-page` |
+| Launching to nobody | getting your first customers | `solo-launch` |
+| Growth that has stalled | one channel, worked properly | `solo-growth` |
+| Whether you need a community | and how not to be eaten by one | `solo-community` |
+| The legal stuff you have avoided | entity, terms, contracts, a lawyer | `solo-legal` |
+| A regulated industry or a security form | what the rules demand of your setup | `solo-compliance` |
 
-Nothing here is legal, tax, or financial advice.
+You do not need to memorise any of that. Describe the problem and the right one
+gets picked.
+
+Nothing here is legal, tax, or financial advice. It is preparation for a
+conversation with someone licensed.
 
 ## Install
 

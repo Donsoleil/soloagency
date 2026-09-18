@@ -50,6 +50,16 @@ memory, which flatters.
 If a loop has not tripped a threshold in six months, either the thresholds are
 too loose or the loop is not needed. Both are worth knowing.
 
+## The notebook
+
+Read `~/.soloagency/memory.md` before asking the founder anything it already
+answers. When this skill produces a decision, write the entry: what was
+decided, why, whether it is one-way, the evidence behind it, and
+`Outcome: (open)`. `solo-memory` owns the format.
+
+A decision made and not written down is a decision you will make again from
+scratch in four months.
+
 ## Evidence
 
 The written loop definition with a threshold and an action per input, plus the
