@@ -1,10 +1,13 @@
 # Your notebook
 
-soloagency keeps one file on your machine:
+soloagency keeps two files on your machine, in one folder:
 
 ```
-~/.soloagency/memory.md
+~/.soloagency/memory.md     your notebook
+~/.soloagency/usage.jsonl   which skills ran, and whether you used the answer
 ```
+
+The notebook is the one that matters and the one worth reading.
 
 It holds three things: a short description of you and your business, the
 decisions you have made with the reasoning behind them, and what happened
@@ -23,8 +26,10 @@ it is about your business specifically rather than businesses in general.
 
 ## What you should know about it
 
-It is a plain markdown file. Open it, read it, edit it, delete it. Nothing in
-soloagency sends it anywhere, and nothing in soloagency can. It is on your
+Both are plain files. Open them, read them, edit them, delete them. Nothing in
+soloagency sends them anywhere, and nothing in soloagency can. The usage log
+holds no business detail, only which skill ran and roughly what for, so
+`solo-tune` can later work out which skills are earning their place. It is on your
 machine and it stays there.
 
 It will contain business details, because that is the point. If your machine is

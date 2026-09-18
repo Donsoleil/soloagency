@@ -30,7 +30,7 @@ cannot give you a number until it knows what each unit actually costs you.
 
 Not using a tool with plugins? See [Install](#install).
 
-## The three rules it works by
+## The rules it works by
 
 **It tells you when it is guessing.** Every answer ends with what it is based
 on. If it made something up because a number was missing, it says so instead of
@@ -50,12 +50,13 @@ code or design, it says so and points you elsewhere rather than bluffing.
 
 ## The notebook
 
-soloagency keeps one plain text file on your computer at
-`~/.soloagency/memory.md`.
+soloagency keeps a notebook on your computer at `~/.soloagency/memory.md`.
 
 It holds a short description of your business, every real decision you make,
-why you made it, and what happened afterwards. Nothing gets sent anywhere and
-nothing can be.
+why you made it, and what happened afterwards. Alongside it sits a short usage
+log, `usage.jsonl`, recording which skills ran and whether you acted on them.
+Both are plain files in the same folder. Nothing gets sent anywhere and nothing
+can be.
 
 This is what makes it better in month six than in week one. It stops asking you
 the same questions, and the record of what you tried and how it went is worth
@@ -93,6 +94,7 @@ Details in [references/TUNING.md](references/TUNING.md).
 | Whether something really got done | proof rather than reassurance | `solo-receipts` |
 | Explaining your business again | telling it about you once | `solo-about` |
 | Remembering what you decided | what you chose and how it went | `solo-memory` |
+| It keeps getting something wrong | fixing the skills themselves | `solo-tune` |
 | A job that needs several steps | doing the whole thing at once | `solo-crew` |
 | Too much to do at once | what can run in parallel | `solo-graph` |
 | Only noticing problems too late | a weekly or monthly check | `solo-loop` |
@@ -231,6 +233,13 @@ for r in ~/.claude/skills ~/.agents/skills ~/.codex/skills \
   find "$r" -maxdepth 1 -type l -lname '*sources/soloagency*' -delete 2>/dev/null
 done
 rm -rf ~/.agents/sources/soloagency
+```
+
+Your notebook is separate and survives an uninstall on purpose, in case you
+reinstall. Remove it too if you want it gone:
+
+```
+rm -rf ~/.soloagency
 ```
 
 Nothing else on your machine is touched.

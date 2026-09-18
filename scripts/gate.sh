@@ -72,6 +72,15 @@ if [[ "$TARGET" == "$HERE/skills" ]]; then
   done <<< "$DOCS"
 fi
 
+  # every skill must be listed in the README table, not just mentioned in prose
+  if [[ -f "$HERE/README.md" ]]; then
+    table=$(sed -n '/^## What it can help with/,/^You do not need/p' "$HERE/README.md")
+    for d in "$TARGET"/*/; do
+      sn=$(basename "$d")
+      grep -qF "\`$sn\`" <<< "$table" || note "$sn is not listed in the README table"
+    done
+  fi
+
   # the privacy promise is load-bearing: nothing may phone home
   # Call syntax only. Words like "analytics" are legitimate business vocabulary.
   offender=$(grep -rlnE "curl +(-[A-Za-z]+ +)*https?://|wget +https?://|requests\.(get|post)\(|urllib\.request|fetch\( *[\"'\`]https?://" \

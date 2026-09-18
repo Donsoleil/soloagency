@@ -1,5 +1,16 @@
 # Changelog
 
+## v0.5.1
+
+README corrections found by reading it against the repo rather than trusting
+it. `solo-tune` was mentioned in the prose but missing from the skills table.
+The heading said three rules above a list of four. The notebook section still
+claimed one file when v0.5.0 added a second. Uninstall now covers the notebook
+folder, which survives an uninstall on purpose.
+
+The gate now checks that every skill appears in the README table, so a skill
+can no longer ship invisible to anyone scanning the list.
+
 ## v0.5.0: It tunes itself
 
 **`solo-tune`.** Reads the local usage log at `~/.soloagency/usage.jsonl` and
