@@ -21,3 +21,5 @@ jobs:
         run: ./scripts/package-skills.sh
       - name: The bundle the README tells people to download must exist
         run: test -f dist/soloagency.zip && echo "soloagency.zip exists"
+      - name: The project package the README points at must exist
+        run: test -f dist/soloagency-project.zip && echo "project package exists"

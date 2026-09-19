@@ -58,6 +58,23 @@ That is the whole thing. It works in every new chat from then on.
 
 ---
 
+## On a phone, or just for one business? Use a Project
+
+Skills are not available in the Claude mobile app. Projects are, once you have
+set one up on a computer, so this is the route if you want soloagency on your
+phone.
+
+Download `soloagency-project.zip` from the
+[latest release](https://github.com/Donsoleil/soloagency/releases/latest) and
+follow the `README-first.txt` inside. It is three steps: make a project, paste
+the instructions, upload the knowledge files.
+
+It is a real trade, not just a different button. A project only works inside
+that project rather than in every chat, the lanes get retrieved rather than
+loaded on demand so it is a little less reliable about opening the right one,
+and you have to redo it when a new version ships. If you can do your thinking
+at a computer, install the skill instead.
+
 ## Already use Claude Code or a terminal?
 
 ```
@@ -238,7 +255,7 @@ index skills at launch.
 | Codex, Cursor, OpenCode, Goose, Berd | the installer |
 | Claude web and desktop | upload the bundle as an account skill, see the top of this page |
 | Cloud and remote sessions | account skills reach these. Plugins and local installs do not, since each session is a fresh container |
-| Claude phone app | skills are not available there yet, so neither is this |
+| Claude phone app | skills are not available there, so use the Projects package instead |
 
 ### Claude desktop, web, and cloud sessions
 

@@ -1,5 +1,25 @@
 # Changelog
 
+## v0.8.0: A Projects version, for phones
+
+Skills are not available in the Claude mobile app. Projects are, once created
+on a computer, so `scripts/package-skills.sh` now also builds
+`dist/soloagency-project.zip`: the front desk rewritten as project custom
+instructions, the 22 lanes and the two reference docs as knowledge files, and a
+plain README-first.txt with the three setup steps.
+
+The desk text is adapted for the surface. It states that lanes are knowledge
+files, that a lane not read is a name rather than a skill, and that it must say
+which files it actually read. It also has to say so when a lane is not
+retrievable, rather than answering from the lane name.
+
+This is a trade and the README says so. A project scopes soloagency to that one
+project instead of every chat, project knowledge is retrieved rather than
+loaded on demand so lane selection is less reliable, and a new version means
+redoing the setup. Install the skill instead wherever that is possible.
+
+CI checks both packages build.
+
 ## v0.7.2: The install instructions were wrong in three places
 
 Checked against Anthropic's own documentation rather than memory, and the
