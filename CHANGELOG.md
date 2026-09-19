@@ -1,5 +1,32 @@
 # Changelog
 
+## v0.7.2: The install instructions were wrong in three places
+
+Checked against Anthropic's own documentation rather than memory, and the
+friendly instructions added in v0.7.1 had three errors.
+
+**The menu path was wrong.** The skills list is under Customize, Skills, and
+uploading is the "+" button, then "+ Create skill", then "Upload a skill". The
+README said Settings, Capabilities, Skills.
+
+**The prerequisite was missing.** Skills require code execution to be enabled
+in Settings, Capabilities. Without it the Skills section is missing or greyed
+out, which is the most likely way a first install fails and there was nothing
+in the README about it.
+
+**The phone claim was false.** Skills are not available in the Claude mobile
+app. The README said it would work on your phone afterwards. It now says to do
+this on a computer and lists the phone app as unsupported in the surfaces
+table.
+
+Troubleshooting now covers the four real failure modes: code execution off,
+downloading the source archive instead of the bundle, not starting a fresh
+chat, and work accounts where an admin has disabled user-uploaded skills.
+
+Source: Anthropic's "Use skills in Claude" support article. The mobile
+limitation is from a third-party guide and is not stated either way in the
+official documentation, so treat it as likely rather than confirmed.
+
 ## v0.7.1: Install instructions for people who do not use a terminal
 
 The README opened with a plugin command, which is useless to most of the people

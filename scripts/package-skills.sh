@@ -95,7 +95,7 @@ if [[ $fail -eq 0 ]]; then
   echo "Built $OUT/soloagency.zip ($(ls -1 "$OUT/individual" | wc -l | tr -d ' ') individual zips too)."
   echo "Every zip: one top-level folder, exactly one SKILL.md, no plugin manifest."
   echo
-  echo "Upload dist/soloagency.zip at claude.ai, Settings, Capabilities, Skills."
+  echo "Upload dist/soloagency.zip at claude.ai: Customize, Skills, +, Create skill, Upload a skill."
 else
   echo "FAILED. See above."
 fi

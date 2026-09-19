@@ -13,22 +13,27 @@ By [Studio140](https://www.140.studio/). MIT licensed.
 
 ## Install it in Claude, no terminal needed
 
-If you use Claude in your browser or the Claude app, this takes about a minute
-and you do not need to install anything on your computer.
+For Claude in a web browser or the Claude desktop app. Takes a couple of
+minutes and installs nothing on your computer.
 
-**1. Download the file.**
+Do this part on a computer. Skills are not available in the Claude phone app,
+so the upload has to happen on web or desktop.
+
+**1. Turn on code execution first.**
+Skills will not work without it, and this is the most common reason nothing
+happens. Go to **Settings**, then **Capabilities**, and switch on **Code
+execution and file creation**.
+
+**2. Download the file.**
 Go to [the latest release](https://github.com/Donsoleil/soloagency/releases/latest)
-and click `soloagency.zip` to download it. Do not unzip it. Claude wants the zip
-exactly as it is.
-
-**2. Open your Claude settings.**
-In Claude, click your name or picture in the bottom left corner, then
-**Settings**. In the list on the left, click **Capabilities**, then **Skills**.
+and click `soloagency.zip`. Do not unzip it. Claude wants the zip exactly as it
+downloads.
 
 **3. Upload it.**
-Click **Upload skill**, choose the `soloagency.zip` you just downloaded, and
-click **Save**. Claude runs a quick security check, then shows soloagency in
-your list with a switch beside it. Make sure the switch is on.
+Go to **Customize**, then **Skills**. Click the **+** button, then
+**+ Create skill**, then **Upload a skill**, and choose the `soloagency.zip`
+you just downloaded. Claude runs a quick security check, then soloagency
+appears in your list with a switch beside it. Make sure the switch is on.
 
 **4. Use it.**
 Start a new chat and say what is on your mind, the way you would tell a friend.
@@ -37,14 +42,19 @@ No commands, no menus, no need to know which part you are using.
 > I'm trying to decide whether to raise my prices next term. Not sure if I
 > should, or by how much, or how to tell my customers.
 
-That is the whole thing. It works in every chat from now on, including on your
-phone.
+That is the whole thing. It works in every new chat from then on.
 
-**If something goes wrong.** If the upload is refused, you probably downloaded
-the wrong file. You want the one called exactly `soloagency.zip`, not the ones
-called `Source code`. If it does not seem to be doing anything, check the switch
-is on in Settings and then start a brand new chat, because it only loads when a
-chat begins.
+**If something goes wrong.**
+
+- *No Skills section, or everything is greyed out.* Code execution is off. Go
+  back to step 1.
+- *The upload is refused.* You probably downloaded the wrong file. You want the
+  one called exactly `soloagency.zip`, not the ones called `Source code`.
+- *It does not seem to be doing anything.* Check the switch is on, then start a
+  brand new chat. Skills load when a chat begins, so an already-open chat will
+  not pick it up.
+- *You are on a work account and cannot find the option.* Your organisation may
+  have turned off user-uploaded skills. That one needs your admin.
 
 ---
 
@@ -226,8 +236,9 @@ index skills at launch.
 |---|---|
 | Claude Code | plugin, or the installer |
 | Codex, Cursor, OpenCode, Goose, Berd | the installer |
-| Claude desktop and web | upload the bundle as an account skill, below |
+| Claude web and desktop | upload the bundle as an account skill, see the top of this page |
 | Cloud and remote sessions | account skills reach these. Plugins and local installs do not, since each session is a fresh container |
+| Claude phone app | skills are not available there yet, so neither is this |
 
 ### Claude desktop, web, and cloud sessions
 
@@ -237,7 +248,8 @@ so upload the bundle:
 
 Download `soloagency.zip` from the
 [latest release](https://github.com/Donsoleil/soloagency/releases/latest), then
-go to Settings, Capabilities, Skills, and upload it.
+go to Customize, Skills, and upload it. Code execution has to be on first, in
+Settings, Capabilities. Step by step at the top of this page.
 
 That is one upload for the whole pack. The front desk is the skill, and the
 other 21 ride along as files it reads when it needs them, so routing still
